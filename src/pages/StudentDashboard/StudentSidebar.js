@@ -6,8 +6,11 @@ import logo from "../../images/logo.png";
 export default function Sidebar({sidebarOpen, setSidebarOpen}) {
   const menus = [
     { title: "User Profile", url: "/studentDashboard/studentProfile" },
+    { title: "Attendance", url: "/" },
     { title: "Library", url: "/studentDashboard/studentLibrary" },
     { title: "Assessment", url: "/studentDashboard/studentAssessment" },
+    
+    
     { title: "Live Class", url: "/live-class" },
     { title: "Discussions Forums", url: "/discussions-forum" },
     { title: "Calendar", url: "/studentDashboard/studentCalender" },

@@ -3,12 +3,14 @@ import React from "react";
 const SelectInput = ({ label, values, ...rest }) => {
   return (
     <>
-      <label
-        for="countries"
-        className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-      >
-        {label}
-      </label>
+     {
+       label &&  <label
+       for="countries"
+       className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+     >
+       {label}
+     </label>
+     }
       <select
         {...rest}
         id="countries"

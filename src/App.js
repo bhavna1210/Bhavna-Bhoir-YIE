@@ -28,7 +28,9 @@ import AdminProfile from "./pages/AdminDashboard/Profile/AdminProfile";
 import AdminSchoolProfile from "./pages/AdminDashboard/Profile/AdminSchoolProfile";
 import AdminStudentProfile from "./pages/AdminDashboard/Profile/AdminStudentProfile";
 import AdminTeacherProfile from "./pages/AdminDashboard/Profile/AdminTeacherProfile";
-import Home from "./pages/Home";
+import AdminReports from "./pages/AdminDashboard/Reports/AdminReports";
+import AdminReportsNav from "./pages/AdminDashboard/Reports/AdminReportsNav";
+import AdminTeacherEvaluationsOverall from "./pages/AdminDashboard/Reports/AdminTeacherEvaluationsOverall";
 import CompletedAssessment from "./pages/StudentDashboard/Assessment/CompleteAssesment";
 import StudentAssessment from "./pages/StudentDashboard/Assessment/StudentAssessment";
 import StudentAcademic from "./pages/StudentDashboard/Documents/StudentAcademic";
@@ -40,7 +42,6 @@ import LibrarySubject from "./pages/StudentDashboard/Library/LibrarySubject";
 import StudentCalendar from "./pages/StudentDashboard/studentCalendar/StudentCalendar";
 import StudentDashboard from "./pages/StudentDashboard/StudentDashboard/StudentDashboard";
 import StudentFee from "./pages/StudentDashboard/StudentFee/StudentFee";
-import StudentProfile from "./pages/StudentDashboard/StudentProfile/StudentProfile";
 import StudentAssesReport from "./pages/StudentDashboard/StudentReports/StudentAssesReport";
 import TeacherAssessment from "./pages/TeacherDashboard/Assessment/TeacherAssessment";
 import TeacherCompleteAssesment from "./pages/TeacherDashboard/Assessment/TeacherCompleteAssesment";
@@ -63,18 +64,11 @@ function App() {
       
 
         {/* home route */}
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<AdminTeacherEvaluationsOverall/>} />
 
         {/* student routes */}
         <Route path="/studentDashboard" element={<StudentDashboard/>}>
-        <Route
-          path="/studentDashboard"
-          element={<StudentProfile/>}
-        />
-        <Route
-          path="/studentDashboard/studentProfile"
-          element={<StudentProfile/>}
-        />
+
         <Route
           path="/studentDashboard/studentLibrary"
           element={<Library/>}
@@ -157,6 +151,11 @@ function App() {
             <Route path="/adminDashboard/adminCalender" element={<AdminCalendar/>}/>
             <Route path="/adminDashboard/AdminEvent" element={<AdminEvent/>}/>
 
+
+            {/* admin reports */}
+            <Route path="/adminDashboard/adminReports" element={<AdminReports/>}/>
+            <Route path="/adminDashboard/schoolAdminReport" element={<AdminReportsNav/>}/>
+
             {/* admin document routes */}
             <Route path="/adminDashboard/adminDocuments" element={<AdminDocuments/>}>
               <Route path="/adminDashboard/adminDocuments/adminAcademic" element={<AdminAcademicDocument/>}/>
@@ -203,12 +202,7 @@ function App() {
           path="/classStatus"
           element={<ClassStatus menuOpen={menuOpen} toggleMenu={toggleMenu} />}
         />
-        <Route
-          path="/teacherStatus"
-          element={
-            <StudentProfile menuOpen={menuOpen} toggleMenu={toggleMenu} />
-          }
-        />
+       
         <Route path="/teacherProfile" element={<TeacherProfile />} />
         <Route path="/createContent" element={<CreateContent />} />
 
