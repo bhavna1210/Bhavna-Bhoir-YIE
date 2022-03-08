@@ -13,7 +13,7 @@ const AdminClassEvaluationsOverall = () => {
   const progress3 = '60%';
 
   return (
-    <div className='w-4/5 mt-10 mx-auto'>
+    <div className='w-3/5 mt-10 mx-auto'>
       <div className='flex items-center justify-between'>
         <div>
           <SelectInput values={schoolClasses} />
@@ -31,8 +31,7 @@ const AdminClassEvaluationsOverall = () => {
 
       {/* class xyz */}
       <div className='border mt-5 p-5'>
-        <div className='font-bold'>Class XYZ</div>
-        {/* top container */}
+        <div className='font-bold text-xl mb-5'>Class XYZ</div>
         <div className='grid grid-cols-2 gap-5 items-center'>
           {/* progress */}
           <div>

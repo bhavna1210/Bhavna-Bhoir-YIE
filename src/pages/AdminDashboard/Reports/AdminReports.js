@@ -7,7 +7,7 @@ const AdminReports = () => {
   const navs = [
       {id:1, nav: 'School Admin Report', link: '/adminDashboard/schoolAdminReport'},
       {id:2, nav: 'Teacher Evaluations', link: '/'},
-      {id:3, nav: 'Class Evaluations', link: '/'},
+      {id:3, nav: 'Class Evaluations', link: '/adminDashboard/adminClassEvaluationsReport'},
   ]
   return (
     <div className='w-1/3 ml-10 mt-5'>

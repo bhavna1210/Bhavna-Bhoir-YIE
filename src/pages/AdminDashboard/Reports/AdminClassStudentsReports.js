@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import Button from '../../../YIEUI/Button';
 
 const AdminClassStudentsReports = () => {
     const navigate = useNavigate();
@@ -8,10 +9,12 @@ const AdminClassStudentsReports = () => {
         { id: 1, nav: 'Assessment', link: '/' },
         { id: 1, nav: 'Quizzes', link: '/' },
         { id: 1, nav: 'Overall', link: '/' },
-    ]
+    ];
     return (
         <>
-            {/* <div class="flex pt-5  mx-auto w-3/4 justify-center mb-5" role="group">
+            
+            <div className='w-1/2 mt-5 mx-auto'>
+            <div class="flex pt-5 mx-auto w-3/4 justify-center mb-5" role="group">
                 {
                     navs.map(nav => (
                         <Button variant="navigation" onClick={() => navigate('/')}>
@@ -19,8 +22,7 @@ const AdminClassStudentsReports = () => {
                         </Button>
                     ))
                 }
-            </div> */}
-            <div className='w-1/2 mt-5 mx-auto'>
+            </div>
                 <div className='flex-col justify-center items-center'>
                 <div className='font-bold text-center text-xl'>Science, Grade 10</div>
                     <table className="mt-5">
