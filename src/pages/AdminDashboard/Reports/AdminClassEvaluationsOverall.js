@@ -13,8 +13,8 @@ const AdminClassEvaluationsOverall = () => {
   const progress3 = '60%';
 
   return (
-    <div className='w-4/5 mx-auto'>
-      <div className='flex items-center justify-evenly'>
+    <div className='w-4/5 mt-10 mx-auto'>
+      <div className='flex items-center justify-between'>
         <div>
           <SelectInput values={schoolClasses} />
         </div>
