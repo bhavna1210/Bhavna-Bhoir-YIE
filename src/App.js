@@ -30,7 +30,7 @@ import AdminStudentProfile from "./pages/AdminDashboard/Profile/AdminStudentProf
 import AdminTeacherProfile from "./pages/AdminDashboard/Profile/AdminTeacherProfile";
 import AdminReports from "./pages/AdminDashboard/Reports/AdminReports";
 import AdminReportsNav from "./pages/AdminDashboard/Reports/AdminReportsNav";
-import AdminTeacherEvaluationsOverall from "./pages/AdminDashboard/Reports/AdminTeacherEvaluationsOverall";
+import Home from "./pages/Home";
 import CompletedAssessment from "./pages/StudentDashboard/Assessment/CompleteAssesment";
 import StudentAssessment from "./pages/StudentDashboard/Assessment/StudentAssessment";
 import StudentAcademic from "./pages/StudentDashboard/Documents/StudentAcademic";
@@ -64,7 +64,7 @@ function App() {
       
 
         {/* home route */}
-        <Route path="/" element={<AdminTeacherEvaluationsOverall/>} />
+        <Route path="/" element={<Home/>} />
 
         {/* student routes */}
         <Route path="/studentDashboard" element={<StudentDashboard/>}>
