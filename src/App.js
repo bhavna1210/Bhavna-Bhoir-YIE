@@ -30,6 +30,9 @@ import AdminStudentProfile from "./pages/AdminDashboard/Profile/AdminStudentProf
 import AdminTeacherProfile from "./pages/AdminDashboard/Profile/AdminTeacherProfile";
 import AdminReports from "./pages/AdminDashboard/Reports/AdminReports";
 import AdminReportsNav from "./pages/AdminDashboard/Reports/AdminReportsNav";
+import AdminClassEvaluationsOverall from "./pages/AdminDashboard/Reports/AdminClassEvaluationsOverall";
+import AdminClassStudentsReports from "./pages/AdminDashboard/Reports/AdminClassStudentsReports";
+import AdminClassDetailedStudentReport from "./pages/AdminDashboard/Reports/AdminClassDetailedStudentReport";
 import Home from "./pages/Home";
 import CompletedAssessment from "./pages/StudentDashboard/Assessment/CompleteAssesment";
 import StudentAssessment from "./pages/StudentDashboard/Assessment/StudentAssessment";
@@ -155,7 +158,9 @@ function App() {
             {/* admin reports */}
             <Route path="/adminDashboard/adminReports" element={<AdminReports/>}/>
             <Route path="/adminDashboard/schoolAdminReport" element={<AdminReportsNav/>}/>
-
+            <Route path="/adminDashboard/adminClassEvaluationsReport" element={<AdminClassEvaluationsOverall/>} />
+            <Route path="/adminDashboard/adminClassStudentsReports" element={<AdminClassStudentsReports/>} />
+            <Route path="/adminDashboard/adminClassDetailedStudentReport" element={<AdminClassDetailedStudentReport/>} />
             {/* admin document routes */}
             <Route path="/adminDashboard/adminDocuments" element={<AdminDocuments/>}>
               <Route path="/adminDashboard/adminDocuments/adminAcademic" element={<AdminAcademicDocument/>}/>

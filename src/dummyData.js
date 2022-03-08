@@ -86,3 +86,16 @@ export const departments = [
   { value: "Department-1" },
   { value: "Department-2" },
 ];
+
+export const chapters = [
+  { value: "Select Chapter" },
+  { value: "Chapter A" },
+  { value: "Chapter B" },
+  { value: "Chapter C" },
+];
+export const quizzes = [
+  { value: "Select Quiz" },
+  { value: "Quiz A" },
+  { value: "Quiz B" },
+  { value: "Quiz C" },
+];
